@@ -48,11 +48,11 @@ The following dictionary only defines columns used in analysis for this dataset.
 |:--------|:-----------|
 |Churn| True or False, Displays if a customer has churned or not|
 |Monthly Charges| The amount in dollars a customer is charged each month|
-|Payment Type| Way in which a customer pays bills: |
-|Black Rating| Rating of the player moving the white pieces using the Glicko-2 rating method for games played on Lichess|
-|Rating Difference| The difference in rating between the players in the game|
-|Game Rating| The average rating of the two players in the game|
+|Billing Type| Way in which a customer pays bills: Automatic billing or Manual billing |
+|Dependents| Yes or no category, does client have dependents?|
 
 # Reproduction Instructions
+
+
 
 # Takeaways and Conclusions
