@@ -54,5 +54,21 @@ The following dictionary only defines columns used in analysis for this dataset.
 # Reproduction Instructions
 
 
+ 1. Clone this repo.
+ 2. Acquire the data from codeup
+ 3. Put the data in the file containing the cloned repo.
+ 4. Run notebook.
+
 
 # Takeaways and Conclusions
+
+* Higher monthly charges seem to be a driver of churn
+* Customers with automatic billing seem to churn at a lower rate than those who pay manually
+* The longer the contract, the less likely a customer will churn
+* Having dependents does seem to affect churn, indicating that nor only financial factors can be good predictors
+
+
+# Recommendations
+
+* Focus on incentivizing long term contracts with customers
+* Push family plans to draw in those with dependents
