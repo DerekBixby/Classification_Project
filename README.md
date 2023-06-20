@@ -70,5 +70,5 @@ The following dictionary only defines columns used in analysis for this dataset.
 
 # Recommendations
 
-* Focus on incentivizing long term contracts with customers
+* Focus on incentivising long term contracts with customers
 * Push family plans to draw in those with dependents
