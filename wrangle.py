@@ -49,3 +49,23 @@ def get_telco_data():
     dummy_df = pd.get_dummies(df[['dependents', 'contract_type', 'billing_type', 'churn']], drop_first=True)
     df = pd.concat([df, dummy_df], axis=1)
     return df
+
+
+    def split_data(df, test_size=.2, validate_size=.25, col_to_stratify=None, random_state=None):
+    '''
+    This splits data into test,train and validate data
+    '''
+    # This takes in a default variable or a default variable to determine target variable for stratification
+    if col_to_stratify == None:
+    # this splits the data
+        train_validate, test = train_test_split(df, test_size=test_size, random_state=random_state)
+        train, validate = train_test_split(train_validate,
+                                       test_size=validate_size,
+                                       random_state=random_state,)
+    else:                                                        
+        train_validate, test = train_test_split(df, test_size=test_size, random_state=random_state, stratify=df[col_to_stratify])
+        train, validate = train_test_split(train_validate,
+                                       test_size=validate_size,
+                                       random_state=random_state,
+                                       stratify=train_validate[col_to_stratify])
+    return train, validate, test
