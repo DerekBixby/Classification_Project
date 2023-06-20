@@ -38,8 +38,8 @@ def get_telco_data():
         
     return df
 
-    def clean_telco(df):
- '''
+def clean_telco(df):
+    '''
     This gets rid of columns not used in the project and creates dummy variables for use in the model
     '''
     # this drops unnecessary columns
@@ -51,7 +51,7 @@ def get_telco_data():
     return df
 
 
-    def split_data(df, test_size=.2, validate_size=.25, col_to_stratify=None, random_state=None):
+def split_data(df, test_size=.2, validate_size=.25, col_to_stratify=None, random_state=None):
     '''
     This splits data into test,train and validate data
     '''
